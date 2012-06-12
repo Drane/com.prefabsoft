@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="app.js"></script>
+<!-- 	<script type="text/javascript">
+	// The root URL for the RESTful services
+	var rootURL = "http://localhost:8080/prefabsoft.com/itemtags";
+
+	function findAll() {
+		console.log('findAll');
+		$.ajax({
+			type : 'GET',
+			url : rootURL,
+			dataType : "json", // data type of response
+			success : logData,
+			error: function(jqXHR, textStatus, errorThrown){
+				alert('findAll error: ' + textStatus);
+			}
+		});
+	}
+
+	function logData(data) {
+		var list = data == null ? [] : (data instanceof Array ? data : [ data ]);
+		console.log("data: " + list.toString());
+		$.each(list, function(intIndex, objValue){
+			$('#testList').append($'<li/>').append($'<a/>',{'href':'test.html','text':objValue.name});
+		});
+		$('#testList').listview('refresh');
+	}
+	findAll();
+	</script> -->
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>My Title</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul id="testList" data-role="listview" data-filter="true">
+			<!-- <li><a href="index.html">Acura</a></li>
+			<li><a href="index.html">Audi</a></li>
+			<li><a href="index.html">BMW</a></li>
+			<li><a href="index.html">Cadillac</a></li>
+			<li><a href="index.html">Chrysler</a></li>
+			<li><a href="index.html">Dodge</a></li>
+			<li><a href="index.html">Ferrari</a></li>
+			<li><a href="index.html">Ford</a></li>
+			<li><a href="index.html">GMC</a></li>
+			<li><a href="index.html">Honda</a></li>
+			<li><a href="index.html">Hyundai</a></li>
+			<li><a href="index.html">Infiniti</a></li>
+			<li><a href="index.html">Jeep</a></li>
+			<li><a href="index.html">Kia</a></li>
+			<li><a href="index.html">Lexus</a></li>
+			<li><a href="index.html">Mini</a></li>
+			<li><a href="index.html">Nissan</a></li>
+			<li><a href="index.html">Porsche</a></li>
+			<li><a href="index.html">Subaru</a></li>
+			<li><a href="index.html">Toyota</a></li>
+			<li><a href="index.html">Volkswagon</a></li>
+			<li><a href="index.html">Volvo</a></li> -->
+		</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>

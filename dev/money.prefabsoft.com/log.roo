@@ -1,0 +1,17 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-08 13:44:27
+project --topLevelPackage com.prefabsoft --projectName prefabsoft.com --java 6 --packaging JAR
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-06-08 13:44:31
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-08 13:45:00
+persistence setup --database MYSQL --provider HIBERNATE 
+entity jpa --class ~.money.ItemTag
+field string name
+json all 
+web mvc json setup
+web mvc json all
+web mvc json all --package ~.json
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-06-08 14:28:49
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-11 12:51:52
+web mvc setup 
+web mvc all --package ~.web
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-06-11 14:51:29
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-12 11:03:48
