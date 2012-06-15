@@ -17,3 +17,12 @@ web mvc all --package ~.web
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-12 11:03:48
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-15 14:51:04
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-06-15 14:51:07
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-06-15 15:02:15
+persistence setup --database MYSQL --provider HIBERNATE --userName root --databaseName prefabmoney --password G3tM3In
+entity jpa --class ~.log.Log --testAutomatically
+field string logLevel
+field string logMessage --sizeMin 4096
+field boolean active
+field date --fieldName createDate --type java.util.Date
+field date --fieldName updateDate --type java.util.Date
+json add --class ~.log.Log 
