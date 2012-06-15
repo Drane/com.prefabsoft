@@ -1,0 +1,17 @@
+// Spring Roo 1.1.1.RELEASE [rev 156ccd6] log opened at 2012-06-06 10:07:32
+project --topLevelPackage be.tradelec --projectName log-to-db-test --java 6
+// Spring Roo 1.1.1.RELEASE [rev 156ccd6] log closed at 2012-06-06 10:07:49
+// Spring Roo 1.1.1.RELEASE [rev 156ccd6] log opened at 2012-06-06 10:08:16
+persistence setup --database MYSQL --provider HIBERNATE --userName root --databaseName tradelec
+entity --class ~.log.Log --testAutomatically
+field string logLevel
+field string logMessage
+field boolean active
+field date --fieldName createDate --type java.util.Date
+field date --fieldName updateDate --type java.util.Date
+controller all --package ~.web
+json add --class ~.log.Log 
+// Spring Roo 1.1.1.RELEASE [rev 156ccd6] log closed at 2012-06-06 13:04:58
+// Spring Roo 1.1.1.RELEASE [rev 156ccd6] log opened at 2012-06-06 15:00:21
+focus --class ~.log.Log 
+// Spring Roo 1.1.1.RELEASE [rev 156ccd6] log closed at 2012-06-06 15:39:12

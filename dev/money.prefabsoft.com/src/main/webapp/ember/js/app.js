@@ -11,7 +11,7 @@ App.MyView = Em.View.extend({
 });
 
 App.ItemTag = Ember.Resource.extend({
-	resourceUrl : 'http://localhost:8080/prefabsoft.com/itemtags',
+	resourceUrl : 'http://localhost:8080/money.prefabsoft.com/itemtags',
 	resourceName : 'itemtag',
 	resourceProperties : [ 'id', 'name' ],
 
@@ -28,7 +28,7 @@ App.ItemTag = Ember.Resource.extend({
 });
 
 var itemTag = App.ItemTag.create({
-	id : 3,
+	id : 1,
 	name : 'test'
 });
 

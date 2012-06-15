@@ -1,5 +1,5 @@
 	// The root URL for the RESTful services
-	var rootURL = "http://localhost:8080/prefabsoft.com/itemtags";
+	var rootURL = "http://localhost:8080/money.prefabsoft.com/itemtags";
 
 	function findAll() {
 		console.log('findAll');
